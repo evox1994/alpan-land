@@ -299,7 +299,6 @@
 	display: block;
 	font-size: 38pt;
 	text-transform: uppercase;
-	font-weight: 700;
 }
 .b-face .face .content .text {
 	margin-top: 50px;
@@ -778,6 +777,15 @@
 	width: 100%;
 	max-width: 960px;
 }
+.popup.popup-small {
+	max-width: 760px;
+	padding: 30px;
+}
+.popup.popup-policy {
+	padding: 30px;
+	max-width: 760px;
+	text-align: left;
+}
 .popup .head {
 	margin: 0 -30px;
 	border-bottom: 1px solid #ef7f1a;
@@ -905,6 +913,18 @@
 .popup .callback .b-form {
 	margin-top: 30px;
 }
+.popup.popup-small .b-form {
+	margin-top: 30px;
+}
+.popup .popup-title {
+	font-size: 18pt;
+	text-transform: uppercase;
+}
+.popup .popup-text {
+	margin-top: 30px;
+	font-size: 12pt;
+	text-align: left;
+}
 
 .b-videos {
 	position: relative;
@@ -1026,6 +1046,33 @@
 	text-transform: uppercase;
 	color: #88bc40;
 	width: calc(100% - 70px);
+}
+
+.b-thanks {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+	min-height: calc(100vh - 147px);
+}
+.b-thanks .content {
+	width: 100%;
+}
+.b-thanks .title {
+	font-size: 38pt;
+	text-transform: uppercase;
+}
+.b-thanks .text {
+	margin-top: 30px;
+	font-size: 19pt;
+	text-transform: uppercase;
+}
+.b-thanks .b-btn {
+	margin: 30px auto 0;
+	max-width: 300px;
 }
 
 
@@ -1411,6 +1458,9 @@
 	.popup {
 		padding: 30px 10px 0;
 	}
+	.popup.popup-small, .popup.popup-policy {
+		padding: 20px 10px;
+	}
 	.popup .head {
 		margin: 0 -10px;
 		padding: 0 10px;
@@ -1473,6 +1523,16 @@
 	.popup .callback .b-form {
 		margin-top: 20px;
 	}
+	.popup.popup-small .b-form {
+		margin-top: 20px;
+	}
+	.popup .popup-title {
+		font-size: 15pt;
+	}
+	.popup .popup-text {
+		font-size: 10pt;
+		margin-top: 20px;
+	}
 
 	.b-videos .slide {
 		height: 315px;
@@ -1489,6 +1549,20 @@
 	}
 	.b-scheme .mobile {
 		display: block;
+	}
+
+	.b-thanks {
+		min-height: calc(100vh - 112px);
+	}
+	.b-thanks .title {
+		font-size: 26pt;
+	}
+	.b-thanks .text {
+		margin-top: 20px;
+		font-size: 15pt;
+	}
+	.b-thanks .b-btn {
+		margin-top: 20px;
 	}
 }
 @media screen and (max-width: 640px){

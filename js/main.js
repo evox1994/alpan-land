@@ -105,7 +105,7 @@ $(document).ready(function(){
 
 	$('.b-videos').slick();
 
-	$(document).on('click','.b-swaps .btn',function(){
+	/*$(document).on('click','.b-swaps .btn',function(){
 		var el = $(this).attr('data-step');
 
 		if ( !$(this).hasClass('active') ){
@@ -115,6 +115,6 @@ $(document).ready(function(){
 			$(el).addClass('active');
 			$('.b-swaps .slider').slick('setPosition');
 		}
-	});
+	});*/
 
 });
