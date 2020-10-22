@@ -686,11 +686,41 @@
 }
 .b-works > li {
 	width: 25%;
+	text-align: center;
 }
 .b-works > li img {
 	display: block;
 	max-width: 100%;
 	margin: 0 auto;
+}
+.b-works > li a {
+	position: relative;
+	display: inline-block;
+}
+.b-works > li a:before {
+	content: '';
+	width: 30px;
+	height: 30px;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+.b-works > li a:after {
+	content: '';
+	width: 14px;
+	height: 14px;
+	border: 2px solid #ffffff;
+	border-left-color: transparent;
+	border-top-color: transparent;
+	position: absolute;
+	right: 13px;
+	bottom: 16px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 .b-works + .b-btn {
 	font-size: 16pt;

@@ -117,4 +117,10 @@ $(document).ready(function(){
 		}
 	});*/
 
+	$(document).on('click','.popup .head .b-btn',function(){
+		var des = $(this).parents('.popup').find('.callback').offset().top - $(this).parents('.fancybox-slide').offset().top;
+		$(this).parents('.fancybox-slide').animate({scrollTop: des}, 500);
+		return false;
+	});
+
 });
